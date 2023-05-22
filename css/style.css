@@ -111,8 +111,8 @@ header .container ul > div:nth-child(3) > li:last-child a {
 /*/ ////////////////////////////// */
 
 .section-header .container {
-  height: 75vh;
-  margin-top: 54px;
+  height: 81vh;
+  margin-top: 50px;
 }
 
 .section-header > img {
@@ -171,6 +171,7 @@ input {
 }
 
 textarea {
+  resize: none;
   border-bottom: none;
 }
 
@@ -331,7 +332,7 @@ textarea::placeholder {
 
 .section-package .row .col-lg-4:nth-child(2) .package-item > div {
   position: absolute;
-  bottom: 10%;
+  bottom: 12%;
   width: 100%;
 }
 
@@ -409,6 +410,7 @@ textarea::placeholder {
 
 .section-footer .row .col-lg-6:nth-child(1) > div p:last-child {
   display: inline-flex;
+  align-items: center;
   gap: 22px;
 }
 
