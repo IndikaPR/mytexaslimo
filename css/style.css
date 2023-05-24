@@ -1,6 +1,7 @@
 /*
 font-family: 'Bebas Neue', sans-serif;
 font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Roboto', sans-serif;
 
@@ -485,34 +486,46 @@ textarea::placeholder {
   background: #000000;
   padding: 55px 0;
 }
-
-.section-footer .row .col-lg-7:nth-child(1) > div {
+.section-footer .row .col-lg-7 > div {
   margin-top: 62px;
   display: grid;
   grid-template-columns: repeat(1, 1fr 2fr);
   row-gap: 20px;
 }
 
-.section-footer .row .col-lg-7:nth-child(1) > div p:last-child {
-  display: inline-flex;
-  align-items: center;
-  gap: 22px;
-}
-
-.section-footer .row .col-lg-7:nth-child(1) > div p > i {
-  font-size: 33px;
-}
-
-.section-footer .row .col-lg-7:nth-child(1) > div p > span:first-child {
-  color: #6c6c6c;
-}
-
-.section-footer .row .col-lg-7:nth-child(1) > div p > span > a {
+.contact p,
+.contact p > a {
   color: #ffffff;
 }
 
-.section-footer .row .col-lg-7:nth-child(1) > div:last-child {
-  margin-top: 82px;
+.contact p span {
+  color: #6c6c6c;
+}
+
+.contact p span:first-child {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
+.contact p:nth-child(2),
+.contact p:nth-child(2) > span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 22px;
+  margin: 0;
+  padding-top: 7px;
+}
+
+.edm p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .section-footer form > button {
