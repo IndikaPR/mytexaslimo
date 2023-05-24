@@ -1,6 +1,8 @@
 /*
 font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
 
 */
 
@@ -37,10 +39,12 @@ h3 {
 
 h4 {
   font-size: 24px;
+  line-height: 35px;
 }
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul {
@@ -49,6 +53,8 @@ ul {
 
 li {
   list-style: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
 }
 
 body p {
@@ -76,36 +82,48 @@ button {
 /*header*/
 /*/////////////////////////////// */
 /*/ ////////////////////////////// */
+
 header {
-  /* margin-top: 50px; */
+  margin-top: 50px;
   position: absolute;
   top: 5%;
   left: 0;
   width: 100%;
-  height: 100%;
   z-index: 5;
 }
 
-header .container ul {
+.nav-bar {
   display: flex;
+}
+
+.nav-bar ul {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-header .container ul > div {
+.nav-bar ul li a {
+  color: #ffffff;
+}
+
+.nav-bar > div:first-child {
+  width: 100%;
   display: inline-flex;
   align-items: center;
 }
 
-header .container ul > div li a {
-  font-family: "Oswald", sans-serif;
-  color: #ffffff;
+.nav-bar > div:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
-header .container ul > div li:not(:last-child) {
-  margin-right: 60px;
+.nav-bar > div ul li:not(:last-child) {
+  margin-right: 56px;
 }
 
-header .container ul > div:nth-child(3) > li:last-child a {
+.nav-bar div:nth-child(3) ul li:nth-child(3) a {
   background: #ffffff;
   color: #000000;
   padding: 10px 32px;
@@ -115,10 +133,13 @@ header .container ul > div:nth-child(3) > li:last-child a {
 /*SECTION-HEADER */
 /*/////////////////////////////// */
 /*/ ////////////////////////////// */
+.section-header {
+  position: relative;
+}
 
 .section-header .container {
   height: 100vh;
-  padding-top: 10%;
+  padding-top: 15%;
 }
 
 .section-header > img {
@@ -165,7 +186,7 @@ header .container ul > div:nth-child(3) > li:last-child a {
 input,
 textarea {
   font-family: "Oswald", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   background: none;
   outline: 0;
   border: none;
@@ -177,12 +198,12 @@ textarea {
 }
 
 input {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 textarea {
   resize: none;
-  border-bottom: none;
 }
 
 input::placeholder,
@@ -190,6 +211,9 @@ textarea::placeholder {
   color: #ffffff;
 }
 
+.section-header form > button {
+  margin-top: 27px;
+}
 /*/ ////////////////////////////// */
 /*/ ////////////////////////////// */
 /*SECTION-ABOUT */
@@ -213,15 +237,16 @@ textarea::placeholder {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: right;
 }
 
 .section-about .container .row .col-lg-5:nth-child(2) {
-  padding-top: 103px;
-  padding-bottom: 180px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-about .container .row .col-lg-5:nth-child(2) > button {
-  width: 60%;
+  width: 50%;
   margin-top: 20px;
 }
 
@@ -237,6 +262,17 @@ textarea::placeholder {
   height: 100%;
 }
 
+.section-gallery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.94%);
+  z-index: 2;
+}
+
 .gallery-img {
   position: absolute;
   top: 0;
@@ -248,9 +284,11 @@ textarea::placeholder {
 }
 
 .section-gallery .container {
+  position: relative;
   text-align: center;
   padding-top: 108px;
   padding-bottom: 55px;
+  z-index: 5;
 }
 
 .section-gallery .container .row {
@@ -282,9 +320,16 @@ textarea::placeholder {
   padding-bottom: 55px;
 }
 
-.section-welcome .container img,
-.section-welcome .container h3 {
+.section-welcome .container img {
   margin-bottom: 35px;
+}
+
+.section-welcome .container p {
+  font-family: "Oswald", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 /*/ ////////////////////////////// */
@@ -295,23 +340,23 @@ textarea::placeholder {
 .section-package {
   position: relative;
   text-align: center;
+  background: #000000;
 }
 
 .section-package .container {
   padding-bottom: 55px;
 }
 
-.section-package > div {
-  position: relative;
-  z-index: -3;
-  background: #000000;
+.section-package .container > h2 {
+  margin-bottom: 47px;
 }
 
 .package-item {
+  text-align: center;
   position: relative;
   width: 100%;
-  height: 100%;
-  padding-top: 120%;
+  padding-top: 150%;
+  overflow: hidden;
 }
 
 .package-item img {
@@ -321,7 +366,6 @@ textarea::placeholder {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2;
 }
 
 .package-item::before {
@@ -333,19 +377,37 @@ textarea::placeholder {
   height: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     linear-gradient(180deg, rgba(0, 0, 0, 0) 48.44%, #000000 89.06%);
-  z-index: -1;
+  z-index: 2;
 }
 
-.package-item button {
-  width: 60%;
-}
-
-.section-package .row .col-lg-4:nth-child(2) .package-item > div {
+.package-item div {
   position: absolute;
-  bottom: 12%;
-  width: 100%;
+  left: 30%;
+  bottom: -50px;
+  z-index: 3;
+  transition-duration: 500ms;
 }
 
+.package-item > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.package-item div a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  color: #000000;
+  background: #ffffff;
+  padding: 10px 42px;
+}
+
+.package-item:hover div {
+  bottom: 0;
+}
 /*/ ////////////////////////////// */
 /*/ ////////////////////////////// */
 /*SECTION-FAQ */
@@ -368,6 +430,10 @@ textarea::placeholder {
   display: flex;
   justify-content: space-between;
   margin-bottom: 17px;
+}
+
+.section-faq .container > div h4 span > i {
+  font-size: 14px;
 }
 
 /*/ ////////////////////////////// */
@@ -395,7 +461,16 @@ textarea::placeholder {
   column-gap: 20px;
 }
 
+.review > div {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+
 .review > div > img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -411,31 +486,44 @@ textarea::placeholder {
   padding: 55px 0;
 }
 
-.section-footer .row .col-lg-6:nth-child(1) > div {
+.section-footer .row .col-lg-7:nth-child(1) > div {
   margin-top: 62px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr 2fr);
   row-gap: 20px;
 }
 
-.section-footer .row .col-lg-6:nth-child(1) > div p:last-child {
+.section-footer .row .col-lg-7:nth-child(1) > div p:last-child {
   display: inline-flex;
   align-items: center;
   gap: 22px;
 }
 
-.section-footer .row .col-lg-6:nth-child(1) > div p > span:first-child {
+.section-footer .row .col-lg-7:nth-child(1) > div p > i {
+  font-size: 33px;
+}
+
+.section-footer .row .col-lg-7:nth-child(1) > div p > span:first-child {
   color: #6c6c6c;
 }
 
-.section-footer .row .col-lg-6:nth-child(1) > div p > span > a {
+.section-footer .row .col-lg-7:nth-child(1) > div p > span > a {
   color: #ffffff;
 }
 
-.section-footer .row .col-lg-6:nth-child(1) > div:last-child {
-  margin-top: 77px;
+.section-footer .row .col-lg-7:nth-child(1) > div:last-child {
+  margin-top: 82px;
 }
 
-.section-footer .row .col-lg-6:nth-child(2) > form {
-  padding-left: 80px;
+.section-footer form > button {
+  margin-top: 25px;
+}
+
+.section-footer form > h3 {
+  margin-bottom: 25px;
+}
+
+.section-footer form > input {
+  padding: 15px 0;
+  margin-bottom: 30px;
 }

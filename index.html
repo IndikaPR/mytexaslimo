@@ -11,7 +11,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -27,21 +28,25 @@
 <body>
   <header>
     <div class="container">
-      <ul>
+      <div class="nav-bar">
         <div>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PACKAGES</a></li>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">PACKAGES</a></li>
+          </ul>
         </div>
         <div>
           <a href="#"><img src="img/logo-1.png" alt="texaslimo"></a>
         </div>
         <div>
-          <li><a href="#">REVIEWS</a></li>
-          <li><a href="#">GALLERY</a></li>
-          <li> <a href="#">BOOK NOW</a></li>
+          <ul>
+            <li><a href="#">REVIEWS</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li> <a href="#">BOOK NOW</a></li>
+          </ul>
         </div>
-      </ul>
+      </div>
     </div>
   </header>
 
@@ -56,18 +61,10 @@
           <div class="col-lg-4">
             <h3>SEND US A MESSAGE</h3>
             <form action="#">
-              <div>
-                <input type="text" name="name" placeholder="Name" />
-              </div>
-              <div>
-                <input type="text" name="email" placeholder="E-Mail" />
-              </div>
-              <div>
-                <input type="text" name="email" placeholder="Number" />
-              </div>
-              <div>
-                <textarea name="message" id="massage" cols="10" rows="3" placeholder="Message"></textarea>
-              </div>
+              <input type="text" name="name" placeholder="Name" />
+              <input type="text" name="email" placeholder="E-Mail" />
+              <input type="text" name="email" placeholder="Number" />
+              <textarea name="message" id="massage" cols="10" rows="3" placeholder="Message"></textarea>
               <button>INQUIRE NOW</button>
             </form>
           </div>
@@ -153,38 +150,45 @@
     <section class="section-welcome">
       <div class="container">
         <img src="img/welcome.png" alt="">
-        <h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          doloremagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco🤩
-        </h4>
-        <h4>JULIE MARKSON</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto amet ab sapiente doloremque id minima
+          libero mollitia? Consectetur in ab animi commodi quae officiis quasi. Consectetur hic debitis aspernatur harum
+        </p>
+        <p>JULIE MARKSON</p>
       </div>
     </section>
 
     <section class="section-package">
-      <div>
-        <div class="container">
-          <h2>OUR PACKAGES</h2>
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="package-item">
-                <img src="img/package-1.jpeg" alt="package-1">
+      <div class="container">
+        <h2>OUR PACKAGES</h2>
+        <div class="row gx-5">
+          <div class="col-lg-4">
+            <div class="package-item">
+              <img src="img/package-1.jpeg" alt="package-1">
+              <a href="#"></a>
+              <div>
                 <h3>WEDDINGS</h3>
+                <a href="#">INQUIRE NOW</a>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="package-item">
-                <img src="img/package-2.jpeg" alt="package-2">
-                <div>
-                  <h3>PARTIES</h3>
-                  <button>INQUIRE NOW</button>
-                </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="package-item">
+              <img src="img/package-2.jpeg" alt="package-2">
+              <a href="#"></a>
+              <div>
+                <h3>PARTIES</h3>
+                <a href="#">INQUIRE NOW</a>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="package-item">
-                <img src="img/package-3.jpeg" alt="package-3">
+          </div>
+          <div class="col-lg-4">
+            <div class="package-item">
+              <img src="img/package-3.jpeg" alt="package-3">
+              <a href="#"></a>
+              <div>
                 <h3>COPORATE</h3>
+                <a href="#">INQUIRE NOW</a>
               </div>
             </div>
           </div>
@@ -207,7 +211,7 @@
 
     <section class="section-review">
       <div class="container">
-        <h3><a href="skype:@mytexaslimo">@mytexaslimo</a></h3>
+        <h3><a href="#">@mytexaslimo</a></h3>
         <div class="review">
           <div><img src="img/review-1.jpeg" alt="review-1"></div>
           <div><img src="img/review-2.jpeg" alt="review-2"></div>
@@ -223,8 +227,8 @@
     <section class="section-footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
-            <h2>ARE YOU READY TO HAVE THE TME OF YOUR LIFE WITH MYTEXASLIMO</h2>
+          <div class="col-lg-7">
+            <h2>ARE YOU READY TO HAVE <br> THE TIME OF YOUR LIFE <br> WITH MYTEXASLIMO</h2>
             <div>
               <p><span>PHONE:</span> <br> <span><a href="tel:110-111-1111">110-111-1111</a></span> </p>
               <p><span>EMAIL:</span> <br> <span><a href="mailto:info@mytexaslimo.com">info@mytexaslimo.com</a> </span>
@@ -240,21 +244,13 @@
               <p>Website By <a href="#"><img src="img/edm.png" alt=""></a></p>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-5">
             <form action="#">
               <h3>SEND US A MESSAGE</h3>
-              <div>
-                <input type="text" name="name" placeholder="Name" />
-              </div>
-              <div>
-                <input type="text" name="email" placeholder="E-Mail" />
-              </div>
-              <div>
-                <input type="text" name="email" placeholder="Number" />
-              </div>
-              <div>
-                <textarea name="message" id="massage" cols="10" rows="3" placeholder="Message"></textarea>
-              </div>
+              <input type="text" name="name" placeholder="Name" />
+              <input type="text" name="email" placeholder="E-Mail" />
+              <input type="text" name="email" placeholder="Number" />
+              <textarea name="message" id="massage" cols="10" rows="3" placeholder="Message"></textarea>
               <button>INQUIRE NOW</button>
             </form>
           </div>
