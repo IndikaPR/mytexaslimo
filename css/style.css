@@ -93,6 +93,10 @@ header {
   z-index: 5;
 }
 
+.nav-bar-2 {
+  display: none;
+}
+
 .nav-bar {
   display: flex;
 }
@@ -138,6 +142,10 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.section-header h1:nth-child(2) {
+  display: none;
 }
 
 .section-header .container {
@@ -496,7 +504,7 @@ textarea::placeholder {
 
 /*/ ////////////////////////////// */
 /*/ ////////////////////////////// */
-/*SECTION-FAQ */
+/*SECTION-REVIEW */
 /*/////////////////////////////// */
 /*/ ////////////////////////////// */
 .section-review {
@@ -542,6 +550,10 @@ textarea::placeholder {
 .section-footer {
   background: #000000;
   padding: 55px 0;
+}
+
+.footer-2 {
+  display: none;
 }
 
 .section-footer h2 {

@@ -3,13 +3,141 @@
     display: none;
   }
 
+  .nav-bar-2 {
+    --bs-gutter-x: 1rem;
+  }
+
+  .nav-bar-2 {
+    display: block;
+  }
+
   .nav-bar-2 > a {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .nav-bar-2 ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-bar-2 ul li a {
+    color: #fff;
+  }
+
+  .nav-bar-2 ul li:last-child a {
+    background: #fff;
+    color: #000;
+    padding: 10px 32px;
+  }
+
   .section-header .container {
     height: 100vh;
     padding-top: 30%;
+  }
+  .section-header h1:nth-child(1) {
+    display: none;
+  }
+  .section-header h1:nth-child(2) {
+    padding-top: 20px;
+    display: block;
+    font-size: 72px;
+    text-align: center;
+  }
+
+  .section-header .col-lg-8 {
+    justify-content: center;
+  }
+
+  .section-header .row {
+    row-gap: 80px;
+  }
+
+  .review {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .package-item {
+    padding-top: 200%;
+  }
+
+  .package-item div {
+    left: 10%;
+    bottom: 0px;
+  }
+
+  .gx-5 {
+    --bs-gutter-x: 1rem;
+  }
+
+  .footer-1 {
+    display: none;
+  }
+
+  .footer-2 {
+    display: block;
+  }
+
+  .footer-2 > h2 {
+    text-align: center;
+  }
+
+  .footer-2 .contact {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-2 .social-media {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-2 .edm p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-2 .col-md-12 form > h3 {
+    text-align: center;
+  }
+
+  .footer-2 .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    font-size: 52px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .footer-2 .contact p,
+  .footer-2 .edm p {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 22px;
+    line-height: 2;
+    margin-top: 50px;
+  }
+
+  .footer-2 .edm img {
+    width: 96px;
+    height: 71px;
+  }
+
+  .footer-2 .contact p:first-child,
+  .footer-2 .contact p:last-child {
+    width: 100%;
+  }
+
+  .footer-2 .col-md-12 form {
+    margin-top: 50px;
   }
 }
