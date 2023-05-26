@@ -1,0 +1,15 @@
+@media all and (max-width: 820px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar-2 > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-header .container {
+    height: 100vh;
+    padding-top: 30%;
+  }
+}
