@@ -1,4 +1,7 @@
 @media all and (max-width: 820px) {
+  .mobile-nav {
+    display: none;
+  }
   .nav-bar {
     display: none;
   }
@@ -139,5 +142,128 @@
 
   .footer-2 .col-md-12 form {
     margin-top: 50px;
+  }
+}
+
+@media all and (max-width: 390px) {
+  .nav-bar-2 ul {
+    display: none;
+  }
+
+  .nav-bar-2 > a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    font-size: 35px;
+    padding: 5px;
+  }
+
+  .nav-bar-2 a > img {
+    width: 200px;
+  }
+  .section-header .container {
+    height: 100vh;
+    padding-top: 40%;
+  }
+
+  .section-header .row {
+    row-gap: 180px;
+  }
+
+  .section-header form {
+    display: none;
+  }
+
+  .section-header .row > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    background: none;
+  }
+
+  .section-about .container .row .col-lg-5:nth-child(2) {
+    padding: 0;
+  }
+
+  .section-about p {
+    padding: 0 10px;
+  }
+
+  .section-header .row > div:nth-child(2) h3 {
+    font-size: 30px;
+    background: #fff;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 10px;
+  }
+  .section-about div:nth-child(2) {
+    text-align: center;
+  }
+
+  .section-gallery .container {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .section-gallery .container .row {
+    margin-top: 10px;
+  }
+
+  .package-item {
+    padding-top: 150%;
+  }
+
+  .package-item div {
+    left: 25%;
+    bottom: 0px;
+  }
+
+  .gx-5 {
+    --bs-gutter-y: 5rem;
+  }
+
+  .review {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .footer-2 .contact {
+    display: block;
+  }
+
+  .footer-2 form {
+    padding: 0 10px;
+  }
+
+  .footer-2 .social-media {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-2 .social-media {
+    display: flex;
+    gap: 100px;
+    font-size: 52px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .section-footer h2 {
+    font-size: 48px;
+  }
+
+  .section-faq i {
+    display: none;
+  }
+
+  .footer-2 .edm img {
+    width: 86px;
+    height: auto;
   }
 }
